@@ -1,0 +1,9 @@
+- name: Install package
+  ansible.builtin.script: >-
+    pipx-install.sh
+    {{ pre_commit_package | quote }}
+    {{ pre_commit_version | quote }}
+  register: task
+  changed_when: "'status=changed' in task.stdout"
+
+- { name: "Debug", debug: {var: task.stdout_lines}}
