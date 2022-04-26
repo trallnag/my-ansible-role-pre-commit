@@ -1,2 +1,2 @@
-pre_commit_version: 2.16.0
+pre_commit_version: "2.18.1"
 pre_commit_package: pre-commit
