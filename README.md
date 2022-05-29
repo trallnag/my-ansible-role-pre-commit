@@ -10,6 +10,6 @@ Role that installs pre-commit.
 
 ## FAQ
 
-### Bump version of pipx?
+### How to change the installed version?
 
 Go into [vars/main.yaml](vars/main.yaml) and bump the version.
